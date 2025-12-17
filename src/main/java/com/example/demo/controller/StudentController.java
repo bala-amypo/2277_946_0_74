@@ -12,7 +12,7 @@ public class StudentController {
 @Autowired
 StudentService ser;
 
-@PostMapping("kadddata")
+@PostMapping("/adddata")
 public Student createData(@RequestBody Student stu){
 return ser.createData(stu);
 
