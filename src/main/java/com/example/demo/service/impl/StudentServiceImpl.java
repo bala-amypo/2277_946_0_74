@@ -10,19 +10,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements StudentServ {
 
-     @Autowired
-     StudentRepository repo;
-
-     @Override
-
-     public Student createData(Student stu) {
-     return repo.save(stu);
-
-}
+    @Autowired
+    private StudentRepository repo;
 
     @Override
+    public Student createData(Student stu) {
+        return repo.save(stu);
+    }
 
-     public List<Student> fetchRecord() {
-     return repo.findA11();
+    @Override
+    public List<Student> fetchRecord() {
+        return repo.findAll();
     }
 }
