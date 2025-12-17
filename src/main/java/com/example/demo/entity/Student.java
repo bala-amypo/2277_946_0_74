@@ -2,13 +2,10 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 
 @Entity
-// @Table(name="studentdetails")
 public class Student {
 
 @Id
-// @GeneratedValue(strategy = GenerationType. IDENTITY)
 private int id;
-// @Column(name="name")
 
 public class Student{
     private Long id;
