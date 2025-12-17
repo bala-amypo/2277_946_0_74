@@ -44,3 +44,4 @@ public Student(Long id,String name,String email,float cgpa){
     this.email=email;
     this.cgpa=cgpa;
 }
+}
