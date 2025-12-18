@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StuServiceImpl implements StudentServ{
+public class StudentServiceImpl implements StudentServ{
 
     @Autowired
     StudentRepository repo;
